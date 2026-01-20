@@ -9,6 +9,7 @@ public class Test {
         compony.setCompletedProcess(new ArrayDeque());
         compony.setNumber("JD123456");
         Courier.doProcess(compony);
+        Couster.search(compony);
         Courier.doProcess(compony);
         Couster.search(compony);
 
