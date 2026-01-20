@@ -4,12 +4,12 @@ import java.time.temporal.ChronoUnit;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class test extends staffInformation {
+public class test  {
     public static void main(String[] args) {
-        staffInformation staffInformation = new staffInformation();
-        Collections.sort(staff, new Comparator<staffInformation>() {
+        StaffInformation staffInformation = new StaffInformation();
+        Collections.sort(StaffInformation.getStaff(), new Comparator<StaffInformation>() {
             @Override
-            public int compare(staffInformation o1, staffInformation o2) {
+            public int compare(StaffInformation o1, StaffInformation o2) {
                 String a=o1.getWorkYear();
                 String b=o2.getWorkYear();
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -29,7 +29,7 @@ public class test extends staffInformation {
             }
         });
         for (int i = 0; i < 3; i++) {
-            System.out.println( staff.get(i));
+            System.out.println( StaffInformation.getStaff().get(i));
 
         }
     }

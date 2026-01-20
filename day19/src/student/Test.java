@@ -13,8 +13,8 @@ public class Test {
         map.put("杜甫", new Grade(90, 80, 85, 98));
         map.put("白居易", new Grade(80, 85, 55, 95));
         map.put("李商隐", new Grade(70, 50, 58, 90));
-        String[] str = {"李白", "杜甫", "白居易","李商隐"};
-        for (int i = 0; i < 4; i++) {
+        String[] str = Name.getNames().toArray(new String[0]);
+        for (int i = 0; i < str.length; i++) {
             double[] a = studenGrade(map.get(str[i]));
             System.out.println("学生的总成绩为" + (int) a[0] + "平均成绩为" + a[1]);
         }
@@ -24,20 +24,20 @@ public class Test {
         System.out.println("数学学科总分为"+a[1]+"平均分"+(int)d[1]);
         System.out.println("英语学科总分为"+a[2]+"平均分"+(int)d[2]);
         System.out.println("地理学科总分为"+a[0]+"平均分"+(int)d[0]);
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < str.length; i++) {
             int c = fail(map.get(str[i]));
             if (c == 1)
                 b++;
         }
         System.out.println("挂科人数为" + b + "人");
         b=0;
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < str.length; i++) {
             int c = fail1(map.get(str[i]));
             if (c == 1)
                 b++;
         }
         System.out.println("新标准下挂科人数为"+b+"人");
-        for (int  i = 0;  i < 4;  i++) {
+        for (int  i = 0;  i < str.length;  i++) {
             System.out.println(str[i]+'\t'+map.get(str[i]).toString());
         }
     }
@@ -56,24 +56,25 @@ public class Test {
     }
 
   public static List ave(Map<String, Grade> map) {
-        double[] arr = new double[4];
-        double[] sum = new double[4];
+      String[] str =  Name.getNames().toArray(new String[0]);
+        double[] arr = new double[str.length];
+        double[] sum = new double[str.length];
       List<double[]> data = new ArrayList<>();
-      String[] str = {"李白", "杜甫", "白居易","李商隐"};
-      for (int i = 0; i < 4; i++) {
+
+      for (int i = 0; i < str.length; i++) {
           sum[0]+=map.get(str[i]).getDili();
       }
-      for (int i = 0; i < 4; i++) {
+      for (int i = 0; i < str.length; i++) {
           sum[1]+=map.get(str[i]).getShuxue();
       }
-      for (int i = 0; i < 4; i++) {
+      for (int i = 0; i < str.length; i++) {
           sum[2]+=map.get(str[i]).getYingyu();
       }
-      for (int i = 0; i < 4; i++) {
+      for (int i = 0; i < str.length; i++) {
           sum[3]+=map.get(str[i]).getYuwen();
       }
-      for (int i = 0; i < 4; i++) {
-          arr[i]=sum[i]/4;
+      for (int i = 0; i < str.length; i++) {
+          arr[i]=sum[i]/str.length;
       }
       data.add(arr);
       data.add(sum);
