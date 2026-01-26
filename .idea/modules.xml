@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/day23/Class/Class.iml" filepath="$PROJECT_DIR$/day23/Class/Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day23/HomeWork/HomeWork.iml" filepath="$PROJECT_DIR$/day23/HomeWork/HomeWork.iml" />
       <module fileurl="file://$PROJECT_DIR$/day08/InternetBar/InternetBar.iml" filepath="$PROJECT_DIR$/day08/InternetBar/InternetBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/day08/Park/Park.iml" filepath="$PROJECT_DIR$/day08/Park/Park.iml" />
       <module fileurl="file://$PROJECT_DIR$/day08/Phone/Phone.iml" filepath="$PROJECT_DIR$/day08/Phone/Phone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day24/calss/calss.iml" filepath="$PROJECT_DIR$/day24/calss/calss.iml" />
       <module fileurl="file://$PROJECT_DIR$/day22/class/class.iml" filepath="$PROJECT_DIR$/day22/class/class.iml" />
       <module fileurl="file://$PROJECT_DIR$/day01/day01.iml" filepath="$PROJECT_DIR$/day01/day01.iml" />
       <module fileurl="file://$PROJECT_DIR$/day02/day02.iml" filepath="$PROJECT_DIR$/day02/day02.iml" />
@@ -28,6 +31,8 @@
       <module fileurl="file://$PROJECT_DIR$/day20/day20.iml" filepath="$PROJECT_DIR$/day20/day20.iml" />
       <module fileurl="file://$PROJECT_DIR$/day21/day21.iml" filepath="$PROJECT_DIR$/day21/day21.iml" />
       <module fileurl="file://$PROJECT_DIR$/day22/day22.iml" filepath="$PROJECT_DIR$/day22/day22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day23/day23.iml" filepath="$PROJECT_DIR$/day23/day23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day24/day24.iml" filepath="$PROJECT_DIR$/day24/day24.iml" />
       <module fileurl="file://$PROJECT_DIR$/day11/game/game.iml" filepath="$PROJECT_DIR$/day11/game/game.iml" />
       <module fileurl="file://$PROJECT_DIR$/day11/library/library.iml" filepath="$PROJECT_DIR$/day11/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/day11/newprocreation/newprocreation.iml" filepath="$PROJECT_DIR$/day11/newprocreation/newprocreation.iml" />
