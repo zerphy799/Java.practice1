@@ -42,12 +42,9 @@ public class HomeWork2 {
                   e.printStackTrace();
                 }
                 if (!file.isDirectory()) {
-                    try {
-                        FileReader reader = new FileReader(file);
-                        FileWriter writer = new FileWriter(newfile);
+                    try(FileReader reader = new FileReader(file);
+                        FileWriter writer = new FileWriter(newfile);) {
                         reader.transferTo(writer);
-                        reader.close();
-                        writer.close();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -57,11 +54,9 @@ public class HomeWork2 {
                 }
             }
         }else{
-            try {
-                FileReader reader = new FileReader(src);
-                FileWriter writer =new FileWriter(dst);
+            try (FileReader reader = new FileReader(src);
+                 FileWriter writer =new FileWriter(dst);){
                 reader.transferTo(writer);
-                reader.close();
             } catch (IOException e) {
                e.printStackTrace();
             }

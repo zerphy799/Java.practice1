@@ -57,11 +57,9 @@ public class HomeWork4 {
         while (true) {
             name = input.nextLine();
             if (!name.equals("完成")) {
-                try {
-                    FileWriter fileWriter = new FileWriter(file2, true);
+                try (FileWriter fileWriter = new FileWriter(file2, true);){
                     fileWriter.write(name);
                     fileWriter.write(" ");
-                    fileWriter.close();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
@@ -69,10 +67,10 @@ public class HomeWork4 {
                 break;
             }
         }
-        try {
-            FileReader fileReader = new FileReader(file1);
-            FileReader fileReader1 = new FileReader(file2);
-            FileWriter fileWriter = new FileWriter(file3);
+        try( FileReader fileReader = new FileReader(file1);
+             FileReader fileReader1 = new FileReader(file2);
+             FileWriter fileWriter = new FileWriter(file3);) {
+
             char[] buffer1 = new char[1024];
             char[] buffer2 = new char[1024];
             int len1, len2;
@@ -82,14 +80,10 @@ public class HomeWork4 {
             String str2 = new String(buffer2);
             String sr3=find(str1,str2);
             fileWriter.write(sr3);
-            fileWriter.close();
-            fileReader.close();
-            fileReader1.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-//        file1.delete();
-//        file2.delete();
+
 
     }
    public static String find (String str1, String str2) {
