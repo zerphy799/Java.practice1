@@ -1,8 +1,7 @@
 package register.xzit;
 
 public class test {
-
-    static void main() {
+    public static void main(String[] args) {
 
         System.out.println("     交通银行");
         System.out.println("   欢迎光临交通银行");
