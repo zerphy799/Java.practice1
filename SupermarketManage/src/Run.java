@@ -239,7 +239,7 @@ public class Run {
                             Log.add(Integer.toString(sum),choose-2,b1,"删除类型","删除了id为"+id1+"的类型");
                             break;
                     }if(choose4==4) break;
-                }
+                }break;
                     case 5: boolean b=false,j=false;//b判断是否登录成功,j用来打断循环退出
                         while(true) {
                         System.out.println("---------欢迎使用收银管理系统---------");
